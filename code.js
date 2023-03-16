@@ -10,4 +10,9 @@ function sayHello(name) {
     else
     return ("Hello, " + name + "!")
 }
-
+function isFive(input) {
+    if (input === 5 || input === "5")
+        return true
+    else
+        return false
+}

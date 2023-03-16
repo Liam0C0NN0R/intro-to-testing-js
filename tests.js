@@ -38,5 +38,13 @@ describe('sayHello', function() {
     });
     it('should return the string "Hello, World!" when false', function(){
         expect(sayHello(false)).toBe("Hello, World!")
-    })
+    });
+});
+describe('isFive', function(){
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true when passed 5', function(){
+        expect(isFive(5 || "5")).toBe(true)
+    });
 });
