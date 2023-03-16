@@ -30,12 +30,7 @@ function isVowel(input){
     else
         return false
 }
-//Assert that:
-// isVowel always returns a boolean
-// isVowel("a") returns true
-// isVowel("A") returns true
-// isVowel("y") returns false
-// isVowel(4) returns false
-// isVowel(true) or isVowel(false) both return false
-// isVowel("banana") returns false
-// isVowel() returns false
+function add(x,y){
+    return Number(x) + Number(y)
+}
+console.log(add("3",5))

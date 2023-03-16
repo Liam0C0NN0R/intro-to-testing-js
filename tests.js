@@ -109,3 +109,28 @@ describe('isVowel',function(){
         expect(isVowel((null))).toBe(false)
     });
 });
+describe('add', function (){
+    it('should be a defined function', function (){
+        expect(typeof(add)).toBe('function')
+    });
+    it('should sum two numbers, as long as each input is a number or string containing a number', function(){
+        expect(add('x','y')).toBe('xy')
+    });
+    it('should add 2 and 3 and return 5', function (){
+        expect(add(2, 3)).toBe(5)
+    });
+    it('should add -3 and -9 and return -12', function (){
+        expect(add(-3, -9)).toBe(-12)
+    });
+    it('should add "5" and 6 and return 11', function (){
+        expect(add("5", 6)).toBe(11)
+    });
+})
+// Assert that add:
+// add(2, 3) returns 5
+// add(-3, -9) returns -12
+// add("5", 6) returns 11
+// add("-4", "10") returns 6
+// add("banana", "split") returns NaN
+// add(2, "apples") returns NaN
+// add() returns NaN
